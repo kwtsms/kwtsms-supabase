@@ -2,6 +2,9 @@
 
 ## [1.0.0] - Unreleased
 
+### Docs
+- Test mode: test messages are queued but not delivered. Their credits are held until you delete them from the Sending Queue in your kwtsms.com account.
+
 ### Added
 - Phone OTP authentication using Supabase Auth Send SMS Hook with Standard Webhooks verification
 - Event-driven SMS notifications through `sms_queue` table (INSERT to send)

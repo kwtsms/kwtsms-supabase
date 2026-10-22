@@ -34,7 +34,7 @@ This integration connects kwtSMS to your Supabase project, replacing the default
 - **Message cleaning** strips emoji, hidden characters, and HTML tags before send
 - **Balance, sender ID, and coverage sync** cached locally, updated daily
 - **SMS audit log** with full API response history
-- **Gateway test mode** for development without consuming credits
+- **Gateway test mode** for development: queued, not delivered; credits held until you delete them from the Sending Queue
 
 ## Architecture
 
