@@ -89,7 +89,7 @@ Deno.serve(async (req) => {
   }
 
   // Redirect to dashboard with project URL pre-filled
-  const dashboardUrl = 'https://boxlinknet.github.io/kwtsms-supabase/?project=' + encodeURIComponent(SUPABASE_URL)
+  const dashboardUrl = 'https://kwtsms.github.io/kwtsms-supabase/?project=' + encodeURIComponent(SUPABASE_URL)
   return Response.redirect(dashboardUrl, 302)
 })
 

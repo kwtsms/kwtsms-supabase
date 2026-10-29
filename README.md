@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/boxlinknet/kwtsms-supabase/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://github.com/kwtsms/kwtsms-supabase/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <a href="https://supabase.com"><img src="https://img.shields.io/badge/Supabase-Edge_Functions-3FCF8E?logo=supabase&logoColor=white" alt="Supabase"></a>
   <a href="https://deno.land"><img src="https://img.shields.io/badge/Deno-TypeScript-000000?logo=deno&logoColor=white" alt="Deno"></a>
   <a href="https://www.kwtsms.com"><img src="https://img.shields.io/badge/kwtSMS-Gateway-FFA200" alt="kwtSMS"></a>
@@ -64,7 +64,7 @@ Four Edge Functions, five database tables, PL/pgSQL triggers for normalization a
 1. Clone this repo:
 
    ```bash
-   git clone https://github.com/boxlinknet/kwtsms-supabase.git
+   git clone https://github.com/kwtsms/kwtsms-supabase.git
    cd kwtsms-supabase
    ```
 
