@@ -104,14 +104,14 @@ Queue an SMS with a template:
 
 ```sql
 INSERT INTO sms_queue (phone, template_slug, variables, language)
-VALUES ('96598765432', 'order_confirmed', '{"order_id": "1234"}', 'en');
+VALUES ('965XXXXXXXX', 'order_confirmed', '{"order_id": "1234"}', 'en');
 ```
 
 Or call the RPC function from your app:
 
 ```typescript
 const { data } = await supabase.rpc('send_sms', {
-  p_phone: '96598765432',
+  p_phone: '965XXXXXXXX',
   p_template_slug: 'order_confirmed',
   p_variables: { order_id: '1234' },
   p_language: 'en'

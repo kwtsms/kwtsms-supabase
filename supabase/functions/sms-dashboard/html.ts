@@ -526,7 +526,8 @@ export const HTML = `<!DOCTYPE html>
         <h3>Send Test SMS</h3>
         <div class="form-group">
           <label>Phone Number</label>
-          <input type="text" id="test-phone" placeholder="96598765432, 96566778899">
+          <!-- 2026-11-05 11:10 +03: placeholders use 965XXXXXXXX, the old sample mobile numbers belong to real people, int-testnumber -->
+          <input type="text" id="test-phone" placeholder="965XXXXXXXX, 965XXXXXXXX">
         </div>
         <div class="form-group">
           <label>Message</label>

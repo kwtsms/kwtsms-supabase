@@ -2,6 +2,9 @@
 
 ## [1.0.0] - Unreleased
 
+### Changed
+- Docs and examples use the placeholder 965XXXXXXXX instead of a sample mobile number.
+
 ### Docs
 - Test mode: test messages are queued but not delivered. Their credits are held until you delete them from the Sending Queue in your kwtsms.com account.
 
