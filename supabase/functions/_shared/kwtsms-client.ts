@@ -1,7 +1,7 @@
 // kwtSMS API wrapper: uses npm:kwtsms package with direct fetch fallback
 // Related: send-sms/index.ts, sms-auth-hook/index.ts, sms-cron/index.ts, sms-admin/index.ts
 
-import { ENDPOINTS } from './constants.ts'
+import { ENDPOINTS, USER_AGENT } from './constants.ts' // 2026-11-05 15:09 +03: USER_AGENT, #939
 import { log, debug, error as logError } from './logger.ts'
 
 interface SendResult {
@@ -49,6 +49,7 @@ async function apiCall<T>(endpoint: string, body: Record<string, unknown>): Prom
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
+      'User-Agent': USER_AGENT, // 2026-11-05 15:09 +03: identify the integration, #939
     },
     body: JSON.stringify(body),
     signal: AbortSignal.timeout(API_TIMEOUT_MS),

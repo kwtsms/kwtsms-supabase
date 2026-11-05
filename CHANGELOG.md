@@ -9,6 +9,7 @@
 - Test mode: test messages are queued but not delivered. Their credits are held until you delete them from the Sending Queue in your kwtsms.com account.
 
 ### Added
+- Requests to kwtSMS carry the integration name and version (no personal data) so kwtSMS can see which integrations are in use.
 - Phone OTP authentication using Supabase Auth Send SMS Hook with Standard Webhooks verification
 - Event-driven SMS notifications through `sms_queue` table (INSERT to send)
 - `send_sms()` RPC convenience function for app-level SMS sending

@@ -11,6 +11,11 @@ export const DEFAULTS = {
 
 export const KWTSMS_API_BASE = 'https://www.kwtsms.com/API'
 
+// 2026-11-05 15:09 +03: User-Agent sent on every kwtSMS call: integration name and version only, no personal
+// data, so kwtSMS can count accounts per integration. The repo has no version file: keep equal to
+// the latest release tag (v1.2.1), #939.
+export const USER_AGENT = 'kwtsms-supabase/1.2.1'
+
 export const ENDPOINTS = {
   SEND: `${KWTSMS_API_BASE}/send/`,
   BALANCE: `${KWTSMS_API_BASE}/balance/`,
