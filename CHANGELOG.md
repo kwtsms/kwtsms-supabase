@@ -2,32 +2,13 @@
 
 ## [1.0.0] - Unreleased
 
-### Changed
-- Docs and examples use the placeholder 965XXXXXXXX instead of a sample mobile number.
-
-### Docs
-- Test mode: test messages are queued but not delivered. Their credits are held until you delete them from the Sending Queue in your kwtsms.com account.
-
 ### Added
-- Requests to kwtSMS carry the integration name and version (no personal data) so kwtSMS can see which integrations are in use.
-- Phone OTP authentication using Supabase Auth Send SMS Hook with Standard Webhooks verification
-- Event-driven SMS notifications through `sms_queue` table (INSERT to send)
-- `send_sms()` RPC convenience function for app-level SMS sending
-- Multilingual templates with `{{placeholder}}` replacement (English and Arabic)
-- 7 default templates: auth_otp, order_confirmed, order_shipped, order_delivered, order_cancelled, payment_received, welcome
-- Template factory reset using stored defaults
-- Customer and admin SMS recipients
-- Phone normalization: Arabic/Hindi digit conversion, prefix stripping, country code prepend
-- Message cleaning: strips emoji, hidden control characters, HTML tags
-- kwtSMS API client with `npm:kwtsms` package and fetch fallback
-- Cached balance, sender IDs, and coverage with daily sync (pg_cron at 03:00 UTC)
-- Queue processor running every 30 seconds (pg_cron + pg_net)
-- Batch deduplication (same phone + same message within batch)
-- Coverage check before send (skip numbers with no route)
-- Zero balance check before processing queue
-- SMS audit log with full API response history
-- Admin API with 12 endpoints: login, settings, templates, logs, balance sync, gateway test
-- Credential masking in API responses and structured JSON logs
-- Row Level Security on all 5 tables
-- Gateway test mode support (`test=1`)
-- Global gateway on/off switch
+- Phone OTP authentication through the Supabase Auth Send SMS Hook.
+- Event-driven SMS notifications and a `send_sms()` function.
+- English and Arabic templates with 7 defaults.
+- Customer and admin recipients.
+- Cached balance, sender IDs and coverage with daily sync.
+- SMS audit log.
+- Admin API.
+- Test mode and a global on/off switch.
+- Integration name and version sent with requests.
