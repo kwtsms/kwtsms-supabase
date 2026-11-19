@@ -8,6 +8,8 @@
   SMS gateway integration for Supabase using <a href="https://www.kwtsms.com">kwtSMS</a>
 </p>
 
+<p align="center">All kwtSMS integrations: <a href="https://www.kwtsms.com/integrations/">kwtsms.com/integrations</a></p>
+
 <p align="center">
   <a href="https://github.com/kwtsms/kwtsms-supabase/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <a href="https://supabase.com"><img src="https://img.shields.io/badge/Supabase-Edge_Functions-3FCF8E?logo=supabase&logoColor=white" alt="Supabase"></a>
